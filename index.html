@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>911 Heritage</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HERO / LANDING A PANTALLA COMPLETA -->
+  <header class="hero" id="inicio">
+    <div class="hero__bg"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__inner">
+      <!-- NAV encima de la imagen (NO sticky) -->
+      <div class="hero__nav-row">
+        <div class="brand brand--light">
+            
+    <!-- LOGO -->
+   <img src="img/logo/logo.png" alt="911 Heritage" class="logo-img">
+        </div>
+
+
+        <button class="nav-toggle" aria-label="Abrir menú">
+          <span class="nav-toggle__line"></span>
+        </button>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#modelos">Cotizar</a></li>
+            <li><a href="#custom">Modelos</a></li>
+            <li>
+              <button class="btn-nav" type="button">
+                Iniciar sesión
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Contenido centrado del hero -->
+      <div class="hero__content">
+        <h1 class="hero__title">911 HERITAGE</h1>
+        <p class="hero__subtitle">
+          “Clásicos que perduran, modernos que inspiran”
+        </p>
+        <button class="btn btn--primary hero__btn" type="button" onclick="scrollToModelos()">
+          Agendar
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- A PARTIR DE AQUÍ ES LA PÁGINA BLANCA QUE APARECE DESPUÉS DEL SCROLL -->
+  <main>
+    <!-- SECCIÓN 1 -->
+    <section class="feature" id="sobre">
+      <div class="feature__text">
+        <h2 class="feature__title">
+          Más que un auto, es<br />
+          una herencia.
+        </h2>
+        <p class="feature__subtitle">
+          Lujo en cada kilómetro.
+        </p>
+
+        <div class="feature__actions">
+          <button class="btn btn--primary">Conóceme!</button>
+          <button class="btn btn--secondary">Prueba de manejo</button>
+        </div>
+      </div>
+
+      <div class="feature__media">
+        <!-- Cambia el src por tu imagen optimizada -->
+        <img
+          src="img/imagenesOptimizadas/verde.webp"
+          alt="Porsche 911 verde en carretera"
+          loading="lazy"
+        />
+      </div>
+    </section>
+
+   <!-- SECCIÓN 2 (imagen izquierda, texto derecha) -->
+<section class="feature feature--image-left" id="modelos">
+  <div class="feature__media">
+    <img
+      src="img/imagenesOptimizadas/customizados.jpg"
+      alt="Detalle de alerón Porsche"
+      loading="lazy"
+    />
+  </div>
+
+  <div class="feature__text">
+    <h2 class="feature__title">
+      Diseño atemporal,<br />
+      tecnología sin límites.
+    </h2>
+    <p class="feature__subtitle">
+      Tecnología de punta, nuevos modelos 2025.
+    </p>
+
+    <div class="feature__actions">
+      <button class="btn btn--primary">Colores</button>
+      <button class="btn btn--secondary">Personalizar</button>
+    </div>
+  </div>
+</section> 
+
+<!-- SECCIÓN MODELOS DE LUJO 2025 (imagen derecha) -->
+<section class="feature feature--image-right" id="lujo-2025">
+
+  <div class="feature__text">
+    <h2 class="feature__title">Modelos de lujo 2025.</h2>
+
+    <p class="feature__subtitle">
+      El equilibrio perfecto entre elegancia y rendimiento.
+      Motores renovados, acabados premium y exclusividad garantizada.
+    </p>
+
+    <div class="feature__actions">
+      <button class="btn btn--primary">Ver modelos</button>
+      <button class="btn btn--secondary">Cotizar ahora</button>
+    </div>
+  </div>
+
+  <div class="feature__media">
+    <img
+      src="img/imagenesOptimizadas/nuevosDeLujo.jpg"
+      alt="Porsche 911 Turbo S negro en exterior"
+      loading="lazy"
+    />
+  </div>
+
+</section>
+
+
+
+<!-- SECCIÓN 2 COLUMNAS: EXHIBICIÓN + INTERIORES -->
+<section class="dual" id="experiencias">
+  <div class="dual__grid">
+
+    <!-- Columna 1: Exhibición -->
+    <article class="dual-card">
+      <img
+        src="img/imagenesOptimizadas/exhibicion.jpg"
+        alt="Exhibición Porsche clásico"
+        class="dual-card__img"
+        loading="lazy"
+      />
+
+      <div class="dual-card__body">
+        <h3 class="dual-card__title">Herencia clásica.</h3>
+        <p class="dual-card__text">
+          Piezas de museo, restauraciones fieles al modelo original y
+          mantenimiento documentado para coleccionistas exigentes.
+        </p>
+
+        <div class="dual-card__actions">
+          <button class="btn btn--primary">Ver colección clásica</button>
+          <button class="btn btn--secondary">Detalles técnicos</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Columna 2: Interiores -->
+    <article class="dual-card">
+      <img
+        src="img/imagenesOptimizadas/interiores.jpg"
+        alt="Interior Porsche de lujo"
+        class="dual-card__img"
+        loading="lazy"
+      />
+
+      <div class="dual-card__body">
+        <h3 class="dual-card__title">Interiores a la medida.</h3>
+        <p class="dual-card__text">
+          Volantes, asientos y paneles personalizados con piel, fibra de carbono
+          y costuras contrastantes diseñadas para ti.
+        </p>
+
+        <div class="dual-card__actions">
+          <button class="btn btn--primary">Configurar interior</button>
+          <button class="btn btn--secondary">Ver acabados</button>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section> <!-- este cierre separa bien la sección dual de la siguiente -->
+
+<!-- SECCIÓN CUSTOM: "Un Porsche hecho a tu medida" -->
+<section class="custom" id="custom">
+  <h2 class="custom__title">
+    Un Porsche hecho a tu medida.
+  </h2>
+
+  <div class="custom__grid">
+    <!-- Imagen grande izquierda -->
+    <article class="custom__main-card">
+      <img
+        src="img/imagenesOptimizadas/detalles.jpg"
+        alt="Escudo de Porsche con gotas de agua"
+        loading="lazy"
+      />
+    </article>
+
+    <!-- Columna derecha con tarjetas -->
+    <div class="custom__side">
+      <article class="product-card">
+        <img
+          src="img/imagenesOptimizadas/modelos.webp"
+          alt="Varios Porsche 911 de colores"
+          loading="lazy"
+        />
+        <div class="product-card__body">
+          <h3 class="product-card__title">Diferentes diseños</h3>
+          <p class="product-card__price">$10,99</p>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img
+          src="img/imagenesOptimizadas/accesorios.jpg"
+          alt="Rin de Porsche 911"
+          loading="lazy"
+        />
+        <div class="product-card__body">
+          <h3 class="product-card__title">Accesorios únicos</h3>
+          <p class="product-card__price">$10,99</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- BANNER EDICIONES ESPECIALES GT3 RS -->
+<section class="special" id="ediciones-gt3">
+  <img
+    src="img/imagenesOptimizadas/exoticos.jpg"
+    alt="Porsche 911 GT3 RS naranja frente a taller"
+    class="special__image"
+    loading="lazy"
+  />
+
+  <div class="special__content">
+    <h2 class="special__title">Ediciones especiales GT3 RS.</h2>
+
+    <p class="special__text">
+      Aerodinámica de circuito, fibra de carbono y un carácter pensado para la pista.
+      Cada GT3 RS se entrega bajo pedido, con especificaciones hechas a tu medida.
+    </p>
+
+    <div class="special__actions">
+      <button class="btn btn--primary">Explorar edición especial</button>
+      <button class="btn btn--secondary">Agendar visita al showroom</button>
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- CONTACTO -->
+    <section class="contact" id="contacto">
+      <div class="contact__inner">
+        <h2 class="contact__title">Hablemos de tu próximo 911</h2>
+        <p class="contact__text">
+          Agenda una llamada o visítanos en el showroom para conocer todas las
+          opciones de personalización.
+        </p>
+
+        <form class="contact__form" id="contact-form">
+          <div class="contact__field">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text" required />
+          </div>
+          <div class="contact__field">
+            <label for="correo">Correo</label>
+            <input id="correo" type="email" required />
+          </div>
+          <div class="contact__field contact__field--full">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" rows="3"></textarea>
+          </div>
+          <button class="btn btn--primary" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="brand footer-brand">
+
+    <!-- LOGO -->
+  <img src="img/logo/logoBlack.png" alt="911 Heritage" class="logo-img">
+        </div>
+
+        <div class="footer__social">
+          <a href="#">Fb</a>
+          <a href="#">In</a>
+          <a href="#">YouTube</a>
+          <a href="#">Ig</a>
+        </div>
+      </div>
+
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4>Tema</h4>
+          <a href="#">Página</a>
+          <a href="#">Página</a>
+          <a href="#">Página</a>
+        </div>
+        <div class="footer__col">
+          <h4>Tema</h4>
+          <a href="#">Página</a>
+          <a href="#">Página</a>
+          <a href="#">Página</a>
+        </div>
+        <div class="footer__col">
+          <h4>Tema</h4>
+          <a href="#">Página</a>
+          <a href="#">Página</a>
+          <a href="#">Página</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2025 911 Heritage · Proyecto académico.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
